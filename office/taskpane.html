@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="preconnect" href="https://labkitpro.com" crossorigin />
+<link rel="dns-prefetch" href="https://labkitpro.com" />
+<title>LabKitPro Quality Tools</title>
+<script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+<link rel="stylesheet" href="taskpane.css?v=1.4.9" />
+</head>
+<body>
+  <div id="versionBanner" class="msg hidden" style="margin:8px 12px 0;font-weight:700;"></div>
+
+  <!-- v1.4.6 first-run onboarding: one compact line + one-click demo (dismissed forever after).
+       The v1.4.5 three-step text squeezed into a vertical sliver on narrow panes; the demo
+       button uses its own .onboard-demo style, immune to the global .btn flex/width rules. -->
+  <div id="onboard" class="onboard hidden">
+    <span class="onboard-txt"><b>New here?</b></span>
+    <button id="onboardDemo" class="onboard-demo" type="button">60-second demo</button>
+    <button id="onboardClose" class="onboard-x" type="button" title="Dismiss" aria-label="Dismiss onboarding">&#215;</button>
+  </div>
+  <header class="hdr">
+    <div class="hdr-in">
+      <img src="assets/icon-32.png" alt="" class="logo" />
+      <div class="hdr-txt">
+        <h1>Cpk &middot; SPC &middot; MSA &middot; Cg &middot; ISO Tools</h1>
+        <p class="sub">by LabKitPro &middot; offline &middot; data stays in Excel &middot; <span id="appVersion"></span></p>
+      </div>
+      <a class="cta" href="https://labkitpro.com/diagnosis/?utm_source=excel-addin&amp;utm_medium=addin&amp;utm_campaign=v1" target="_blank"
+         style="background:#f59e0b;color:#111827;font-weight:800;font-size:12px;padding:8px 12px;border-radius:6px;text-decoration:none;white-space:nowrap;">60s gap check &rarr;</a>
+    </div>
+  </header>
+
+  <nav class="tabs">
+    <div class="tabs-in">
+      <button class="tab active" data-tab="cpk">Cpk</button>
+      <button class="tab" data-tab="spc">SPC</button>
+      <button class="tab" data-tab="msa">MSA</button>
+      <button class="tab" data-tab="cg">Cg/Cgk</button>
+      <button class="tab" data-tab="tr">Transition</button>
+      <button class="tab" data-tab="help">Help</button>
+    </div>
+  </nav>
+
+  <section id="importBar" class="import-bar">
+    <button id="importToggle" class="import-toggle" type="button">Import external data</button>
+    <div id="importPanel" class="import-panel hidden">
+      <p class="hint">Paste values copied from a CSV, another sheet, or any text file. One row per line; columns split by tab, comma or spaces. Set the spec limits / parameters for the current tool first, then Import &amp; analyze.</p>
+      <textarea id="importText" class="import-area" placeholder="10.02 9.97 10.11&#10;10.05 9.94&#10;..." spellcheck="false"></textarea>
+      <div class="btn-row">
+        <button id="importRun" class="btn primary" type="button">Import &amp; analyze</button>
+        <button id="importClear" class="btn" type="button">Clear</button>
+      </div>
+      <div id="importError" class="msg hidden"></div>
+    </div>
+  </section>
+
+  <main>
+    <div class="wrap">
+
+      <!-- ============ Cpk ============ -->
+      <section class="panel active" data-panel="cpk">
+        <div class="spec-row">
+          <label>LSL<input type="number" id="lsl" step="any" placeholder="9.80" /></label>
+          <label>USL<input type="number" id="usl" step="any" placeholder="10.20" /></label>
+          <label>Target<input type="number" id="target" step="any" placeholder="optional" /></label>
+        </div>
+
+        <p class="hint">
+          <b>Measurements</b> &mdash; select the value column in the sheet, then Analyze.
+          Select several columns &rarr; each column = one subgroup (enables Cp/Cpk);
+          single column &rarr; Pp/Ppk only.
+        </p>
+
+        <div class="btn-row">
+          <button id="analyze" class="btn primary">Analyze selection</button>
+          <button id="loadSample" class="btn">Sample data</button>
+        </div>
+        <p class="hint dim">Leave LSL or USL blank for a one-sided spec.</p>
+
+        <section id="result" class="hidden">
+          <div id="verdict" class="verdict"></div>
+          <table id="metrics" class="metrics"></table>
+          <div class="charts" id="cpkCharts"></div>
+          <div class="btn-row">
+            <button id="insertReport" class="btn primary">Insert report</button>
+            <button id="copyReport" class="btn">Copy report</button>
+            <button id="cpkDownload" class="btn dl">Download report</button>
+          </div>
+          <p class="foot-note">Thresholds per AIAG SPC: capable &ge; 1.33 &middot; marginal 1.00&ndash;1.33 &middot; not capable &lt; 1.00</p>
+        </section>
+
+        <div id="error" class="msg hidden"></div>
+      </section>
+
+      <!-- ============ SPC ============ -->
+      <section class="panel" data-panel="spc">
+        <div class="spec-row">
+          <label style="flex:2">Chart type
+            <select id="spcType">
+              <option value="xbar-r">X&#772;-R (subgroups)</option>
+              <option value="xbar-s">X&#772;-S (subgroups)</option>
+              <option value="xbar-r-median">X&#772;-R Median</option>
+              <option value="i-mr">I-MR (individuals)</option>
+              <option value="p">p (defectives)</option>
+              <option value="np">np (defectives, const n)</option>
+              <option value="c">c (defects)</option>
+              <option value="u">u (defects / unit)</option>
+            </select>
+          </label>
+        </div>
+
+        <p class="hint" id="spcHint"></p>
+
+        <div class="btn-row">
+          <button id="spcAnalyze" class="btn primary">Analyze selection</button>
+          <button id="spcSample" class="btn">Sample data</button>
+        </div>
+
+        <section id="spcResult" class="hidden">
+          <div id="spcVerdict" class="verdict"></div>
+          <table id="spcMetrics" class="metrics"></table>
+          <div id="spcViol" class="viol"></div>
+          <div class="charts" id="spcCharts"></div>
+          <div class="btn-row">
+            <button id="spcInsert" class="btn primary">Insert report</button>
+            <button id="spcCopy" class="btn">Copy report</button>
+            <button id="spcDownload" class="btn dl">Download report</button>
+          </div>
+          <p class="foot-note">Western Electric / Nelson rules: ① beyond limits ② 2-of-3 beyond 2&sigma; ③ 4-of-5 beyond 1&sigma; ④ 8 same side ⑤ 6 trending</p>
+        </section>
+
+        <div id="spcError" class="msg hidden"></div>
+      </section>
+
+      <!-- ============ MSA (5 studies, mirrors the Chrome extension) ============ -->
+      <section class="panel" data-panel="msa">
+        <div class="spec-row">
+          <label style="flex:2">Study type
+            <select id="msaType">
+              <option value="grr">Gage R&amp;R (%GRR)</option>
+              <option value="bias">Bias (t-test)</option>
+              <option value="lin">Linearity (regression)</option>
+              <option value="stab">Stability (drift)</option>
+              <option value="attr">Attribute agreement (Kappa)</option>
+            </select>
+          </label>
+        </div>
+
+        <p class="hint" id="msaHint"></p>
+        <!-- MSA 1: Gage R&R -->
+        <div class="msa-sub active" data-msa-panel="grr">
+          <div class="spec-row">
+            <label>Appraisers<input type="number" id="msaApp" min="1" max="3" step="1" value="3" /></label>
+            <label>Trials<input type="number" id="msaTrials" min="2" max="3" step="1" value="3" /></label>
+            <label>Parts<input type="number" id="msaParts" min="3" max="10" step="1" value="10" /></label>
+            <label>Tol<input type="number" id="msaTol" step="any" placeholder="optional" /></label>
+          </div>
+          <p class="hint">
+            <b>Gage R&amp;R</b> (AIAG, X&#772;-R) &mdash; select the measurement table: rows = appraiser &times; trial
+            (appraiser 1 trial 1&hellip;n, then appraiser 2&hellip;), columns = parts.
+            Leave Tolerance blank to report %GRR against total variation.
+          </p>
+          <div class="btn-row">
+            <button id="msaAnalyze" class="btn primary">Run Gage R&amp;R</button>
+            <button id="msaSample" class="btn">Sample data</button>
+          </div>
+          <section id="msaGrrResult" class="hidden">
+            <div id="msaGrrVerdict" class="verdict"></div>
+            <table id="msaGrrMetrics" class="metrics"></table>
+            <div class="charts" id="msaGrrCharts"></div>
+            <div class="btn-row">
+              <button id="msaGrrInsert" class="btn primary">Insert report</button>
+              <button id="msaGrrCopy" class="btn">Copy report</button>
+              <button id="msaGrrDownload" class="btn dl">Download report</button>
+            </div>
+            <p class="foot-note">AIAG MSA: %GRR &le; 10% acceptable &middot; 10&ndash;30% conditional &middot; &gt; 30% not acceptable. NDC &ge; 5 required.</p>
+          </section>
+          <div id="msaGrrError" class="msg hidden"></div>
+        </div>
+
+        <!-- MSA 2: Bias -->
+        <div class="msa-sub" data-msa-panel="bias">
+          <div class="spec-row">
+            <label>Reference<input type="number" id="msaBiasRef" step="any" placeholder="true value" /></label>
+            <label>Tolerance<input type="number" id="msaBiasTol" step="any" placeholder="optional" /></label>
+          </div>
+          <p class="hint">
+            <b>Bias</b> (AIAG ch. III, exact t-test) &mdash; select a single column of repeated
+            measurements taken on the same reference (true) value. &ge; 5 readings.
+          </p>
+          <div class="btn-row">
+            <button id="msaBiasAnalyze" class="btn primary">Run bias study</button>
+            <button id="msaBiasSample" class="btn">Sample data</button>
+          </div>
+          <section id="msaBiasResult" class="hidden">
+            <div id="msaBiasVerdict" class="verdict"></div>
+            <table id="msaBiasMetrics" class="metrics"></table>
+            <div class="charts" id="msaBiasCharts"></div>
+            <div class="btn-row">
+              <button id="msaBiasInsert" class="btn primary">Insert report</button>
+              <button id="msaBiasCopy" class="btn">Copy report</button>
+              <button id="msaBiasDownload" class="btn dl">Download report</button>
+            </div>
+            <p class="foot-note">Exact t-test vs t-critical (df = n&minus;1, &alpha; = 0.05) per AIAG MSA ch. III.</p>
+          </section>
+          <div id="msaBiasError" class="msg hidden"></div>
+        </div>
+
+        <!-- MSA 3: Linearity -->
+        <div class="msa-sub" data-msa-panel="lin">
+          <div class="spec-row">
+            <label>Tolerance<input type="number" id="msaLinTol" step="any" placeholder="optional" /></label>
+          </div>
+          <p class="hint">
+            <b>Linearity</b> (AIAG ch. III, regression) &mdash; select a 2-column range:
+            column 1 = reference value, column 2 = measured value. One row per reference level, &ge; 4 levels.
+          </p>
+          <div class="btn-row">
+            <button id="msaLinAnalyze" class="btn primary">Run linearity</button>
+            <button id="msaLinSample" class="btn">Sample data</button>
+          </div>
+          <section id="msaLinResult" class="hidden">
+            <div id="msaLinVerdict" class="verdict"></div>
+            <table id="msaLinMetrics" class="metrics"></table>
+            <div class="charts" id="msaLinCharts"></div>
+            <div class="btn-row">
+              <button id="msaLinInsert" class="btn primary">Insert report</button>
+              <button id="msaLinCopy" class="btn">Copy report</button>
+              <button id="msaLinDownload" class="btn dl">Download report</button>
+            </div>
+            <p class="foot-note">Linearity = |slope| &times; span &middot; &le; 5% of tolerance acceptable (AIAG MSA ch. III).</p>
+          </section>
+          <div id="msaLinError" class="msg hidden"></div>
+        </div>
+
+        <!-- MSA 4: Stability -->
+        <div class="msa-sub" data-msa-panel="stab">
+          <div class="spec-row">
+            <label>Reference<input type="number" id="msaStabRef" step="any" placeholder="true value" /></label>
+          </div>
+          <p class="hint">
+            <b>Stability</b> (drift over time) &mdash; select the table where <b>each row = one time point</b>'s
+            repeated measurements on the same reference (equal count per row, &ge; 2 rows).
+          </p>
+          <div class="btn-row">
+            <button id="msaStabAnalyze" class="btn primary">Run stability</button>
+            <button id="msaStabSample" class="btn">Sample data</button>
+          </div>
+          <section id="msaStabResult" class="hidden">
+            <div id="msaStabVerdict" class="verdict"></div>
+            <table id="msaStabMetrics" class="metrics"></table>
+            <div class="charts" id="msaStabCharts"></div>
+            <div class="btn-row">
+              <button id="msaStabInsert" class="btn primary">Insert report</button>
+              <button id="msaStabCopy" class="btn">Copy report</button>
+              <button id="msaStabDownload" class="btn dl">Download report</button>
+            </div>
+            <p class="foot-note">X&#772;-R limits across time-group means (AIAG MSA ch. III).</p>
+          </section>
+          <div id="msaStabError" class="msg hidden"></div>
+        </div>
+
+        <!-- MSA 5: Attribute agreement -->
+        <div class="msa-sub" data-msa-panel="attr">
+          <p class="hint">
+            <b>Attribute agreement</b> (AIAG ch. IV, Kappa) &mdash; select a 3-column range:
+            column 1 = appraiser (text, e.g. A / B / C), column 2 = actual judgement (pass/fail),
+            column 3 = reference judgement. &ge; 5 rows.
+          </p>
+          <div class="btn-row">
+            <button id="msaAttrAnalyze" class="btn primary">Run attribute study</button>
+            <button id="msaAttrSample" class="btn">Sample data</button>
+          </div>
+          <section id="msaAttrResult" class="hidden">
+            <div id="msaAttrVerdict" class="verdict"></div>
+            <table id="msaAttrMetrics" class="metrics"></table>
+            <div class="charts" id="msaAttrCharts"></div>
+            <div class="btn-row">
+              <button id="msaAttrInsert" class="btn primary">Insert report</button>
+              <button id="msaAttrCopy" class="btn">Copy report</button>
+              <button id="msaAttrDownload" class="btn dl">Download report</button>
+            </div>
+            <p class="foot-note">Agreement + Cohen's Kappa vs reference (AIAG MSA ch. IV).</p>
+          </section>
+          <div id="msaAttrError" class="msg hidden"></div>
+        </div>
+      </section>
+
+      <!-- ============ Cg / Cgk ============ -->
+      <section class="panel" data-panel="cg">
+        <div class="spec-row">
+          <label>Reference<input type="number" id="cgRef" step="any" placeholder="true value" /></label>
+          <label>Tolerance<input type="number" id="cgTol" step="any" placeholder="USL&minus;LSL" /></label>
+        </div>
+
+        <p class="hint">
+          <b>Measurement capability</b> (VDA 5) &mdash; select the measurement column in the sheet,
+          then enter the reference (true) value and the tolerance band (USL&minus;LSL).
+        </p>
+
+        <div class="btn-row">
+          <button id="cgAnalyze" class="btn primary">Analyze</button>
+          <button id="cgSample" class="btn">Sample data</button>
+        </div>
+
+        <section id="cgResult" class="hidden">
+          <div id="cgVerdict" class="verdict"></div>
+          <table id="cgMetrics" class="metrics"></table>
+          <div class="charts" id="cgCharts"></div>
+          <div class="btn-row">
+            <button id="cgInsert" class="btn primary">Insert report</button>
+            <button id="cgCopy" class="btn">Copy report</button>
+            <button id="cgDownload" class="btn dl">Download report</button>
+          </div>
+          <p class="foot-note">VDA 5: Cg &ge; 1.33 and Cgk &ge; 1.33 = accept (20% tolerance / 10% tolerance rule).</p>
+        </section>
+
+        <div id="cgError" class="msg hidden"></div>
+      </section>
+
+      <!-- ============ Transition ============ -->
+      <section class="panel" data-panel="tr">
+        <p class="hint">
+          ISO 9001:2026 and 14001:2026 are published; the three-system transition window is
+          open <b>now</b> (peak period). 45001:2027 is in DIS &mdash; expected 2027, dates TBC.
+          Live countdowns and milestones below.
+        </p>
+        <div class="tr-grid" id="trGrid"></div>
+        <div class="tr-links">
+          <a class="tr-pill" href="https://labkitpro.com/iso-9001-2026/?utm_source=excel-addin&amp;utm_medium=addin&amp;utm_campaign=v1" target="_blank">All transition hubs &#8599;</a>
+          <a class="tr-pill" href="https://labkitpro.com/diagnosis/?utm_source=excel-addin&amp;utm_medium=addin&amp;utm_campaign=v1" target="_blank">Free gap diagnosis &#8599;</a>
+        </div>
+        <p class="hint dim">Full transition toolkits, difference analyses and document packs:
+          <a href="https://labkitpro.com/iso-9001-2026/?utm_source=excel-addin&amp;utm_medium=addin&amp;utm_campaign=v1" target="_blank">9001:2026</a> &middot;
+          <a href="https://labkitpro.com/iso-14001-2026?utm_source=excel-addin&amp;utm_medium=addin&amp;utm_campaign=v1" target="_blank">14001:2026</a> &middot;
+          <a href="https://labkitpro.com/iso-45001-2027?utm_source=excel-addin&amp;utm_medium=addin&amp;utm_campaign=v1" target="_blank">45001:2027</a></p>
+        <p class="disclaim">LabKitPro transition dates are compiled from ISO / IAF / accredited-body publications for planning only and are not legal or certification advice. Always confirm current deadlines with your accreditation body / certification body.</p>
+      </section>
+
+      <!-- ============ Help ============ -->
+      <section class="panel" data-panel="help">
+        <div class="help-intro">
+          <b>Every tool follows the same 3 steps:</b>
+          <ol class="help-steps">
+            <li>Select a range of cells in your sheet (the data to analyze).</li>
+            <li>Set the parameters shown on the tab (spec limits, chart type, etc.).</li>
+            <li>Click <b>Analyze</b> (or <b>Run Gage R&amp;R</b>). Results + charts appear here.</li>
+          </ol>
+          <p class="hint dim">Everything runs offline — your data never leaves Excel. <b>New here?</b> Click <b>Sample data</b> on any tab to auto-fill a demo dataset, then Analyze it.</p>
+        </div>
+
+        <div class="help-grid">
+          <div class="help-card">
+            <h3>Cpk · Process capability</h3>
+            <ul>
+              <li>Select <b>one column</b> of measurements &rarr; enter LSL / USL (Target optional) &rarr; Analyze.</li>
+              <li>Select <b>2+ columns</b> &rarr; each column is one subgroup (enables Cp / Cpk).</li>
+              <li>Leave one spec limit blank for a <b>one-sided</b> spec.</li>
+            </ul>
+          </div>
+          <div class="help-card">
+            <h3>SPC &middot; Control charts (8 types)</h3>
+            <ul>
+              <li><b>X&#772;-R</b> / <b>X&#772;-S</b> / <b>X&#772;-R Median</b>: 2+ columns, each column = one subgroup (2&ndash;10 rows); X&#772; chart + R / S chart below.</li>
+              <li><b>I-MR</b>: one column of individual readings (time-ordered).</li>
+              <li><b>p</b>: 2 columns &mdash; subgroup size <b>n</b> and number of defectives <b>d</b> (n may vary).</li>
+              <li><b>np</b>: same as p, but subgroup size <b>n</b> must be constant.</li>
+              <li><b>c</b>: 2 columns &mdash; subgroup size <b>n</b> and defect count <b>c</b> (n may vary).</li>
+              <li><b>u</b>: same as c, but reported per unit (defects / unit, varying n allowed).</li>
+              <li><b>Sample data</b> loads the classic 25-subgroup study for the selected chart type.</li>
+            </ul>
+          </div>
+          <div class="help-card">
+            <h3>MSA &middot; 5 studies (AIAG)</h3>
+            <ul>
+              <li><b>Gage R&amp;R</b> — AIAG standard study: <b>3 appraisers &times; 10 parts &times; 3 trials = 90 measurements</b> (the Sample data button loads exactly this). Rows = appraiser &times; trial, columns = parts.</li>
+              <li><b>Bias</b> — one column of repeated readings on a reference value + t-test.</li>
+              <li><b>Linearity</b> — 2 columns: reference, measured &mdash; one row per measurement (AIAG: 5 levels &times; 12 repeats; the sample loads this).</li>
+              <li><b>Stability</b> — each row = one time point's readings on the reference (drift check; the sample loads 12 time points &times; 5).</li>
+              <li><b>Attribute</b> — 3 columns: appraiser, actual, reference (pass/fail) &rarr; agreement + Kappa. AIAG standard: 50 parts &times; 3 appraisers &times; 2 trials (the sample loads this).</li>
+            </ul>
+          </div>
+          <div class="help-card">
+            <h3>Cg / Cgk · Measurement capability</h3>
+            <ul>
+              <li>Select the measurement column, then enter the <b>Reference</b> (true value) and <b>Tolerance</b> (USL &minus; LSL).</li>
+              <li>VDA 5 rule: Cg &ge; 1.33 and Cgk &ge; 1.33 = accept.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="help-card wide">
+          <h3>Reports &amp; Sample data</h3>
+          <ul>
+            <li><b>Insert report</b> &mdash; click a single empty cell, then Insert (click twice to confirm): the metrics land as a <b>Label&nbsp;|&nbsp;Value</b> table with real numbers you can reference and reuse in the sheet.</li>
+            <li><b>Copy report</b> &mdash; copies a plain-text report to your clipboard (for email or Word).</li>
+            <li><b>Download report</b> &mdash; saves a self-contained HTML file (charts + metrics + method) you can open or email.</li>
+            <li><b>Sample data</b> &mdash; works from anywhere, any time: click it and a typical demo dataset is placed at the top of the sheet (cell A1) and selected for you. If that spot is busy, the data is simply kept in memory &mdash; either way <b>Analyze</b> runs on it immediately, no selection needed.</li>
+            <li><b>Import external data</b> (top bar) &mdash; paste values from a CSV / another sheet / text file; columns split by tab, comma or space. Analysis runs on the pasted data regardless of the write.</li>
+          </ul>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="ftr">
+    <a href="https://labkitpro.com/tools/?utm_source=excel-addin&amp;utm_medium=addin&amp;utm_campaign=v1" target="_blank">Full suite &amp; paid exports on labkitpro.com &rarr;</a>
+    <span class="dot">&middot;</span>
+    <a href="https://labkitpro.com/?utm_source=excel-addin&amp;utm_medium=addin&amp;utm_campaign=v1" target="_blank">labkitpro.com</a>
+    <span class="dot">&middot;</span>
+    <a href="https://labkitpro.com/legal/privacy-policy.html" target="_blank">Privacy</a>
+    <span class="dot">&middot;</span>
+    <a href="https://labkitpro.com/legal/terms-of-use.html" target="_blank">Terms</a>
+    <span class="dot">&middot;</span>
+    <a href="mailto:support@labkitpro.com">support@labkitpro.com</a>
+  </footer>
+
+  <script src="calc.js?v=1.4.9"></script>
+  <script src="charts.js?v=1.4.9"></script>
+  <script src="app.js?v=1.4.9"></script>
+</body>
+</html>
