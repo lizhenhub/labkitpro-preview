@@ -1,5 +1,5 @@
 1:"$Sreact.fragment"
-2:T3d70,<script type="application/ld+json">{
+2:T3ad8,<script type="application/ld+json">{
  "@context": "https://schema.org",
  "@graph": [
   {
@@ -119,18 +119,13 @@
 <p style="margin:0 0 10px;"><b>GUM 是唯一被接受的方法吗？</b><br>不是。GUM 不确定度框架最常用；蒙特卡洛传播（JCGM 101）适用于非线性模型或非正态输入分布；某些行业使用基于方法性能和内部质控的、经验证的自上而下方法。用哪一种都要写明模型并论证输入。</p>
 <p style="margin:0 0 10px;"><b>能用校准证书的不确定度当整份预算吗？</b><br>只有在能论证不存在其他显著贡献时才可以——对检测实验室而言这很少成立。样品制备、基质效应、重复性、环境条件和方法偏倚通常都有贡献。证书给出的只是一个标准不确定度分量，不是预算。</p>
 <div style="background:#0f2a4a;color:#fff;border-radius:12px;padding:20px 22px;margin:30px 0 18px;"><p style="margin:0 0 6px;font-size:11px;font-weight:700;letter-spacing:.6px;color:#9dc0ef;text-transform:uppercase;">从预算走到报告</p><p style="margin:0 0 8px;font-size:18px;font-weight:700;line-height:1.4;">按 GUM 分量和有效自由度搭不确定度预算</p><p style="margin:0 0 14px;font-size:14px;color:#d7e3f4;">输入带分布与灵敏系数的 A 类、B 类分量，工具完成合成、计算有效自由度，并给出写明包含因子的扩展不确定度 U。</p><a href="https://labkitpro.com/tools/uncertainty/" style="display:inline-block;background:#fff;color:#0f2a4a;padding:11px 18px;border-radius:8px;text-decoration:none;font-weight:700;">打开不确定度计算器 →</a><p style="margin:12px 0 0;font-size:12px;color:#a9c1e0;">浏览器内免费运行。导出格式化不确定度报告按次 $4.9——这是浏览器工具中唯一按次收费的报告。</p></div>
-<h2 style="font-size:17px;margin:26px 0 8px;">延伸阅读</h2><ul style="padding-left:22px;font-size:14px;">
-<li style="margin-bottom:6px;"><a href="https://labkitpro.com/guides/iso-17025-onsite-assessment-zh/" style="color:#2563eb;">怎么过 ISO/IEC 17025 现场评审</a></li>
-<li style="margin-bottom:6px;"><a href="https://labkitpro.com/guides/method-validation-vs-verification-zh/" style="color:#2563eb;">方法验证与方法确认：条款 7.2 到底要什么</a></li>
-<li style="margin-bottom:6px;"><a href="https://labkitpro.com/guides/gage-rr-acceptance-criteria-zh/" style="color:#2563eb;">GR&amp;R：10% / 30% 阈值到底在说什么</a></li>
-</ul>
 <p style="margin-top:28px;border-top:1px solid #e6e9ef;padding-top:14px;color:#5b6675;font-size:12px;">本指南依据公开发布的标准与认可机构文件编写，仅引用编号、标题与意译要点，不复制标准原文，供内部准备与学习参考，不构成认证或认可决定，也不构成法律意见。ISO 标准为 ISO 的商标；IATF 16949 由国际汽车工作组发布，并非 ISO 标准。现行实验室标准为 ISO/IEC 17025:2017，不存在 2025 版。Global ACI 已于 2026 年 1 月 1 日取代 IAF 与 ILAC。</p>
 <p style="color:#5b6675;font-size:12px;"><a href="https://labkitpro.com/academy/" style="color:#2563eb;">按标准进入学院</a> · <a href="https://labkitpro.com/guides/" style="color:#2563eb;">全部实战指南</a> · <a href="https://labkitpro.com/tools/" style="color:#2563eb;">免费浏览器工具</a></p>
 </div>
 </div>5:X
 a:X
 a:C
-0:{"buildId":"aLYKshdVQHmrl67tef5Vu","data":[{"rsc":["$","$1","c",{"children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,"$L3"]}],"isPartial":"$@4","staleTime":"$5","varyParams":null},{"rsc":"$L6","isPartial":"$@7","staleTime":"$5","varyParams":null},{"rsc":"$L8","isPartial":"$@9","staleTime":"$5","varyParams":"$a"},{"rsc":"$Lb","isPartial":"$@c","staleTime":"$5","varyParams":"$a"}],"isUpgradeableISRFallback":false,"a":"$@d","rootVaryParams":null,"needsRuntimeRequest":"$@e"}
+0:{"buildId":"L5IT1dKBNRyqUdUY61EvD","data":[{"rsc":["$","$1","c",{"children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,"$L3"]}],"isPartial":"$@4","staleTime":"$5","varyParams":null},{"rsc":"$L6","isPartial":"$@7","staleTime":"$5","varyParams":null},{"rsc":"$L8","isPartial":"$@9","staleTime":"$5","varyParams":"$a"},{"rsc":"$Lb","isPartial":"$@c","staleTime":"$5","varyParams":"$a"}],"isUpgradeableISRFallback":false,"a":"$@d","rootVaryParams":null,"needsRuntimeRequest":"$@e"}
 f:I[97367,["/_next/static/chunks/3fntmmi971322.js","/_next/static/chunks/44akv4s2pjyhg.js","/_next/static/chunks/3lomafkwojbhj.js","/_next/static/chunks/3j9w__s_pmzpu.js","/_next/static/chunks/0at8juk_chkd2.js","/_next/static/chunks/1z8e6pqr_dqbc.js"],"OutletBoundary"]
 10:"$Sreact.suspense"
 12:I[97367,["/_next/static/chunks/3fntmmi971322.js","/_next/static/chunks/44akv4s2pjyhg.js","/_next/static/chunks/3lomafkwojbhj.js","/_next/static/chunks/3j9w__s_pmzpu.js","/_next/static/chunks/0at8juk_chkd2.js","/_next/static/chunks/1z8e6pqr_dqbc.js"],"ViewportBoundary"]

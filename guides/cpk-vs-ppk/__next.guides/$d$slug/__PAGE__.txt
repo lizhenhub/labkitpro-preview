@@ -1,5 +1,5 @@
 1:"$Sreact.fragment"
-2:T4165,<script type="application/ld+json">{
+2:T3ebd,<script type="application/ld+json">{
  "@context": "https://schema.org",
  "@graph": [
   {
@@ -120,17 +120,12 @@
 <p style="margin:0 0 10px;"><b>Can Cpk be negative?</b><br>Yes. If the process mean has moved outside a specification limit, the distance to that limit is negative, so the minimum becomes negative. It means the process is producing out-of-spec material at the centre of its distribution, not merely in a tail.</p>
 <p style="margin:0 0 10px;"><b>Do I need both Cpk and Ppk for a submission?</b><br>Most automotive customers ask for the initial-process performance index (Ppk) from the submission run and capability (Cpk) once the process is stable. Check the submission level and customer-specific requirements — the required index and minimum are contractual, not universal.</p>
 <div style="background:#0f2a4a;color:#fff;border-radius:12px;padding:20px 22px;margin:30px 0 18px;"><p style="margin:0 0 6px;font-size:11px;font-weight:700;letter-spacing:.6px;color:#9dc0ef;text-transform:uppercase;">Put the numbers in</p><p style="margin:0 0 8px;font-size:18px;font-weight:700;line-height:1.4;">Compute Cpk and Ppk from one measurement sample</p><p style="margin:0 0 14px;font-size:14px;color:#d7e3f4;">Paste your measurements and the two specification limits. The calculator returns Cpk, Ppk, Cp, Pp and the distribution at a glance, so you can see the capability gap instead of arguing about it.</p><a href="https://labkitpro.com/tools/cpk/" style="display:inline-block;background:#fff;color:#0f2a4a;padding:11px 18px;border-radius:8px;text-decoration:none;font-weight:700;">Open the free Cpk / Ppk calculator →</a><p style="margin:12px 0 0;font-size:12px;color:#a9c1e0;">Runs in your browser. Export the report free. No sign-up needed.</p></div>
-<h2 style="font-size:17px;margin:26px 0 8px;">Keep reading</h2><ul style="padding-left:22px;font-size:14px;">
-<li style="margin-bottom:6px;"><a href="https://labkitpro.com/guides/control-chart-out-of-control-rules/" style="color:#2563eb;">8 control-chart out-of-control rules, and when not to use them</a></li>
-<li style="margin-bottom:6px;"><a href="https://labkitpro.com/guides/gage-rr-acceptance-criteria/" style="color:#2563eb;">Gage R&amp;R: what the 10% / 30% thresholds really mean</a></li>
-<li style="margin-bottom:6px;"><a href="https://labkitpro.com/guides/8d-report-writing-guide/" style="color:#2563eb;">How to write an 8D report a customer will accept</a></li>
-</ul>
 <p style="margin-top:28px;border-top:1px solid #e6e9ef;padding-top:14px;color:#5b6675;font-size:12px;">LabKitPro guides are written from published standards and accreditation-body documents — references, clause numbers and paraphrased intent only, never verbatim standard text. They are for preparation and study, not a certification or accreditation decision, and not legal advice. ISO standards are trademarks of ISO; IATF 16949 is published by the International Automotive Task Force and is not an ISO standard. The current laboratory standard is ISO/IEC 17025:2017; there is no 2025 edition. Global ACI replaced IAF and ILAC on 1 January 2026.</p>
 <p style="color:#5b6675;font-size:12px;"><a href="https://labkitpro.com/academy/" style="color:#2563eb;">Academy by standard</a> · <a href="https://labkitpro.com/guides/" style="color:#2563eb;">All practical guides</a> · <a href="https://labkitpro.com/tools/" style="color:#2563eb;">Free browser tools</a></p>
 </div>5:X
 a:X
 a:C
-0:{"buildId":"aLYKshdVQHmrl67tef5Vu","data":[{"rsc":["$","$1","c",{"children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,"$L3"]}],"isPartial":"$@4","staleTime":"$5","varyParams":null},{"rsc":"$L6","isPartial":"$@7","staleTime":"$5","varyParams":null},{"rsc":"$L8","isPartial":"$@9","staleTime":"$5","varyParams":"$a"},{"rsc":"$Lb","isPartial":"$@c","staleTime":"$5","varyParams":"$a"}],"isUpgradeableISRFallback":false,"a":"$@d","rootVaryParams":null,"needsRuntimeRequest":"$@e"}
+0:{"buildId":"L5IT1dKBNRyqUdUY61EvD","data":[{"rsc":["$","$1","c",{"children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,"$L3"]}],"isPartial":"$@4","staleTime":"$5","varyParams":null},{"rsc":"$L6","isPartial":"$@7","staleTime":"$5","varyParams":null},{"rsc":"$L8","isPartial":"$@9","staleTime":"$5","varyParams":"$a"},{"rsc":"$Lb","isPartial":"$@c","staleTime":"$5","varyParams":"$a"}],"isUpgradeableISRFallback":false,"a":"$@d","rootVaryParams":null,"needsRuntimeRequest":"$@e"}
 f:I[97367,["/_next/static/chunks/3fntmmi971322.js","/_next/static/chunks/44akv4s2pjyhg.js","/_next/static/chunks/3lomafkwojbhj.js","/_next/static/chunks/3j9w__s_pmzpu.js","/_next/static/chunks/0at8juk_chkd2.js","/_next/static/chunks/1z8e6pqr_dqbc.js"],"OutletBoundary"]
 10:"$Sreact.suspense"
 12:I[97367,["/_next/static/chunks/3fntmmi971322.js","/_next/static/chunks/44akv4s2pjyhg.js","/_next/static/chunks/3lomafkwojbhj.js","/_next/static/chunks/3j9w__s_pmzpu.js","/_next/static/chunks/0at8juk_chkd2.js","/_next/static/chunks/1z8e6pqr_dqbc.js"],"ViewportBoundary"]

@@ -1,5 +1,5 @@
 1:"$Sreact.fragment"
-2:T40fd,<script type="application/ld+json">{
+2:T3e75,<script type="application/ld+json">{
  "@context": "https://schema.org",
  "@graph": [
   {
@@ -116,17 +116,12 @@
 <p style="margin:0 0 10px;"><b>Can I average multiple readings instead of improving the gage?</b><br>Sometimes — averaging repeated measurements reduces the repeatability component, but it must be defined in the measurement method, applied consistently, and reflected in the control plan. It does not fix a reproducibility problem or poor resolution.</p>
 <p style="margin:0 0 10px;"><b>How often should a Gage R&amp;R study be repeated?</b><br>There is no universal interval. Re-run it when the gage, fixture, method, operator population or characteristic changes, when a customer requires it, and at the frequency your control plan or customer-specific requirements define.</p>
 <div style="background:#0f2a4a;color:#fff;border-radius:12px;padding:20px 22px;margin:30px 0 18px;"><p style="margin:0 0 6px;font-size:11px;font-weight:700;letter-spacing:.6px;color:#9dc0ef;text-transform:uppercase;">Read the ANOVA, not just the headline</p><p style="margin:0 0 8px;font-size:18px;font-weight:700;line-height:1.4;">Run a Gage R&amp;R study and see EV, AV, %GRR and ndc</p><p style="margin:0 0 14px;font-size:14px;color:#d7e3f4;">Enter the standard 10 × 3 × 3 readings and get the ANOVA breakdown, repeatability vs reproducibility, %GRR, %Tolerance and the distinct-category count in your browser.</p><a href="https://labkitpro.com/tools/msa/" style="display:inline-block;background:#fff;color:#0f2a4a;padding:11px 18px;border-radius:8px;text-decoration:none;font-weight:700;">Open the free MSA / Gage R&amp;R tool →</a><p style="margin:12px 0 0;font-size:12px;color:#a9c1e0;">Runs in your browser. Export the report free. No sign-up needed.</p></div>
-<h2 style="font-size:17px;margin:26px 0 8px;">Keep reading</h2><ul style="padding-left:22px;font-size:14px;">
-<li style="margin-bottom:6px;"><a href="https://labkitpro.com/guides/cpk-vs-ppk/" style="color:#2563eb;">Cpk vs Ppk: what the gap tells you about drift</a></li>
-<li style="margin-bottom:6px;"><a href="https://labkitpro.com/guides/control-chart-out-of-control-rules/" style="color:#2563eb;">8 control-chart out-of-control rules, and when not to use them</a></li>
-<li style="margin-bottom:6px;"><a href="https://labkitpro.com/guides/aiag-vda-action-priority-vs-rpn/" style="color:#2563eb;">AIAG-VDA FMEA: why AP replaced RPN</a></li>
-</ul>
 <p style="margin-top:28px;border-top:1px solid #e6e9ef;padding-top:14px;color:#5b6675;font-size:12px;">LabKitPro guides are written from published standards and accreditation-body documents — references, clause numbers and paraphrased intent only, never verbatim standard text. They are for preparation and study, not a certification or accreditation decision, and not legal advice. ISO standards are trademarks of ISO; IATF 16949 is published by the International Automotive Task Force and is not an ISO standard. The current laboratory standard is ISO/IEC 17025:2017; there is no 2025 edition. Global ACI replaced IAF and ILAC on 1 January 2026.</p>
 <p style="color:#5b6675;font-size:12px;"><a href="https://labkitpro.com/academy/" style="color:#2563eb;">Academy by standard</a> · <a href="https://labkitpro.com/guides/" style="color:#2563eb;">All practical guides</a> · <a href="https://labkitpro.com/tools/" style="color:#2563eb;">Free browser tools</a></p>
 </div>5:X
 a:X
 a:C
-0:{"buildId":"aLYKshdVQHmrl67tef5Vu","data":[{"rsc":["$","$1","c",{"children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,"$L3"]}],"isPartial":"$@4","staleTime":"$5","varyParams":null},{"rsc":"$L6","isPartial":"$@7","staleTime":"$5","varyParams":null},{"rsc":"$L8","isPartial":"$@9","staleTime":"$5","varyParams":"$a"},{"rsc":"$Lb","isPartial":"$@c","staleTime":"$5","varyParams":"$a"}],"isUpgradeableISRFallback":false,"a":"$@d","rootVaryParams":null,"needsRuntimeRequest":"$@e"}
+0:{"buildId":"L5IT1dKBNRyqUdUY61EvD","data":[{"rsc":["$","$1","c",{"children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,"$L3"]}],"isPartial":"$@4","staleTime":"$5","varyParams":null},{"rsc":"$L6","isPartial":"$@7","staleTime":"$5","varyParams":null},{"rsc":"$L8","isPartial":"$@9","staleTime":"$5","varyParams":"$a"},{"rsc":"$Lb","isPartial":"$@c","staleTime":"$5","varyParams":"$a"}],"isUpgradeableISRFallback":false,"a":"$@d","rootVaryParams":null,"needsRuntimeRequest":"$@e"}
 f:I[97367,["/_next/static/chunks/3fntmmi971322.js","/_next/static/chunks/44akv4s2pjyhg.js","/_next/static/chunks/3lomafkwojbhj.js","/_next/static/chunks/3j9w__s_pmzpu.js","/_next/static/chunks/0at8juk_chkd2.js","/_next/static/chunks/1z8e6pqr_dqbc.js"],"OutletBoundary"]
 10:"$Sreact.suspense"
 12:I[97367,["/_next/static/chunks/3fntmmi971322.js","/_next/static/chunks/44akv4s2pjyhg.js","/_next/static/chunks/3lomafkwojbhj.js","/_next/static/chunks/3j9w__s_pmzpu.js","/_next/static/chunks/0at8juk_chkd2.js","/_next/static/chunks/1z8e6pqr_dqbc.js"],"ViewportBoundary"]

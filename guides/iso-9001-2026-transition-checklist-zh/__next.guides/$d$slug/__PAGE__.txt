@@ -1,5 +1,5 @@
 1:"$Sreact.fragment"
-2:T48d4,<script type="application/ld+json">{
+2:T4661,<script type="application/ld+json">{
  "@context": "https://schema.org",
  "@graph": [
   {
@@ -133,18 +133,13 @@
 <p style="margin:0 0 10px;"><b>截止日到底是 2029 年 9 月 15 日还是 30 日？</b><br>Global ACI 的转版文件把截止定在 2029-09-30；部分国家机构按发布日起三年窗口描述为 9 月中旬。以自己认可／认证机构的书面转版安排为准，并计划在两个日期之前都早早完成。</p>
 <p style="margin:0 0 10px;"><b>错过截止会怎样？</b><br>2015 版已认可证书在转版截止时失效，即使证书上印的有效期更晚。届时面对的是按 2026 版重新做初次认证，而不是转版，成本与审核时间都要重新付。</p>
 <div style="background:#0f2a4a;color:#fff;border-radius:12px;padding:20px 22px;margin:30px 0 18px;"><p style="margin:0 0 6px;font-size:11px;font-weight:700;letter-spacing:.6px;color:#9dc0ef;text-transform:uppercase;">第 3 步，不用自己拉表格</p><p style="margin:0 0 8px;font-size:18px;font-weight:700;line-height:1.4;">从条款级差距清单开始转版</p><p style="margin:0 0 14px;font-size:14px;color:#d7e3f4;">针对现行版本运行现状诊断，拿到差距热力图和完整 Word 差距报告，再决定哪些文件真的需要修订。诊断与报告都免费。</p><a href="https://labkitpro.com/diagnosis/iso9001/2015/" style="display:inline-block;background:#fff;color:#0f2a4a;padding:11px 18px;border-radius:8px;text-decoration:none;font-weight:700;">运行免费的 ISO 9001 诊断 →</a><p style="margin:12px 0 0;font-size:12px;color:#a9c1e0;">现状诊断与完整 Word 差距报告永久免费，无需注册。</p></div>
-<h2 style="font-size:17px;margin:26px 0 8px;">延伸阅读</h2><ul style="padding-left:22px;font-size:14px;">
-<li style="margin-bottom:6px;"><a href="https://labkitpro.com/guides/quality-manual-iso-9001-required-zh/" style="color:#2563eb;">ISO 9001 还要求质量手册吗</a></li>
-<li style="margin-bottom:6px;"><a href="https://labkitpro.com/guides/iso-17025-onsite-assessment-zh/" style="color:#2563eb;">怎么过 ISO/IEC 17025 现场评审</a></li>
-<li style="margin-bottom:6px;"><a href="https://labkitpro.com/guides/8d-report-writing-guide-zh/" style="color:#2563eb;">8D 报告怎么写客户才会接受</a></li>
-</ul>
 <p style="margin-top:28px;border-top:1px solid #e6e9ef;padding-top:14px;color:#5b6675;font-size:12px;">本指南依据公开发布的标准与认可机构文件编写，仅引用编号、标题与意译要点，不复制标准原文，供内部准备与学习参考，不构成认证或认可决定，也不构成法律意见。ISO 标准为 ISO 的商标；IATF 16949 由国际汽车工作组发布，并非 ISO 标准。现行实验室标准为 ISO/IEC 17025:2017，不存在 2025 版。Global ACI 已于 2026 年 1 月 1 日取代 IAF 与 ILAC。</p>
 <p style="color:#5b6675;font-size:12px;"><a href="https://labkitpro.com/academy/" style="color:#2563eb;">按标准进入学院</a> · <a href="https://labkitpro.com/guides/" style="color:#2563eb;">全部实战指南</a> · <a href="https://labkitpro.com/tools/" style="color:#2563eb;">免费浏览器工具</a></p>
 </div>
 </div>5:X
 a:X
 a:C
-0:{"buildId":"aLYKshdVQHmrl67tef5Vu","data":[{"rsc":["$","$1","c",{"children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,"$L3"]}],"isPartial":"$@4","staleTime":"$5","varyParams":null},{"rsc":"$L6","isPartial":"$@7","staleTime":"$5","varyParams":null},{"rsc":"$L8","isPartial":"$@9","staleTime":"$5","varyParams":"$a"},{"rsc":"$Lb","isPartial":"$@c","staleTime":"$5","varyParams":"$a"}],"isUpgradeableISRFallback":false,"a":"$@d","rootVaryParams":null,"needsRuntimeRequest":"$@e"}
+0:{"buildId":"L5IT1dKBNRyqUdUY61EvD","data":[{"rsc":["$","$1","c",{"children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,"$L3"]}],"isPartial":"$@4","staleTime":"$5","varyParams":null},{"rsc":"$L6","isPartial":"$@7","staleTime":"$5","varyParams":null},{"rsc":"$L8","isPartial":"$@9","staleTime":"$5","varyParams":"$a"},{"rsc":"$Lb","isPartial":"$@c","staleTime":"$5","varyParams":"$a"}],"isUpgradeableISRFallback":false,"a":"$@d","rootVaryParams":null,"needsRuntimeRequest":"$@e"}
 f:I[97367,["/_next/static/chunks/3fntmmi971322.js","/_next/static/chunks/44akv4s2pjyhg.js","/_next/static/chunks/3lomafkwojbhj.js","/_next/static/chunks/3j9w__s_pmzpu.js","/_next/static/chunks/0at8juk_chkd2.js","/_next/static/chunks/1z8e6pqr_dqbc.js"],"OutletBoundary"]
 10:"$Sreact.suspense"
 12:I[97367,["/_next/static/chunks/3fntmmi971322.js","/_next/static/chunks/44akv4s2pjyhg.js","/_next/static/chunks/3lomafkwojbhj.js","/_next/static/chunks/3j9w__s_pmzpu.js","/_next/static/chunks/0at8juk_chkd2.js","/_next/static/chunks/1z8e6pqr_dqbc.js"],"ViewportBoundary"]

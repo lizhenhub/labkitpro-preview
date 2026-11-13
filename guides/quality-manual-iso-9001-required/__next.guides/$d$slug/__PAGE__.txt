@@ -1,5 +1,5 @@
 1:"$Sreact.fragment"
-2:T3e5a,<script type="application/ld+json">{
+2:T3bb4,<script type="application/ld+json">{
  "@context": "https://schema.org",
  "@graph": [
   {
@@ -115,17 +115,12 @@
 <p style="margin:0 0 10px;"><b>Is a quality manual required for ISO/IEC 17025 accreditation?</b><br>No. ISO/IEC 17025:2017 uses option A or option B for the management system and does not mandate a manual by name. Some accreditation bodies' application checklists still ask for an equivalent overview document; follow your own body's current requirements.</p>
 <p style="margin:0 0 10px;"><b>What should we hand a customer who insists on a manual?</b><br>A short QMS overview (scope, process map, responsibilities, document/record index) plus a cross-reference from each section of their questionnaire to the controlled document that covers it. It satisfies the request without inventing a document the standard does not require.</p>
 <div style="background:#0f2a4a;color:#fff;border-radius:12px;padding:20px 22px;margin:30px 0 18px;"><p style="margin:0 0 6px;font-size:11px;font-weight:700;letter-spacing:.6px;color:#9dc0ef;text-transform:uppercase;">Build the documents you actually need</p><p style="margin:0 0 8px;font-size:18px;font-weight:700;line-height:1.4;">Browse the document library by standard, level and clause</p><p style="margin:0 0 14px;font-size:14px;color:#d7e3f4;">See which documents and records a working system needs — and generate the ones that are missing with your scope, processes and terms built in.</p><a href="https://labkitpro.com/templates/" style="display:inline-block;background:#fff;color:#0f2a4a;padding:11px 18px;border-radius:8px;text-decoration:none;font-weight:700;">Open the document library →</a><p style="margin:12px 0 0;font-size:12px;color:#a9c1e0;">Forms and records are free forever with no watermark; generated context-aware documents are $1.9 per delivery (quality manual $9.9).</p></div>
-<h2 style="font-size:17px;margin:26px 0 8px;">Keep reading</h2><ul style="padding-left:22px;font-size:14px;">
-<li style="margin-bottom:6px;"><a href="https://labkitpro.com/guides/iso-9001-2026-transition-checklist/" style="color:#2563eb;">ISO 9001:2026 transition: the 9-step checklist</a></li>
-<li style="margin-bottom:6px;"><a href="https://labkitpro.com/guides/iso-17025-onsite-assessment/" style="color:#2563eb;">How to pass an ISO/IEC 17025 on-site assessment</a></li>
-<li style="margin-bottom:6px;"><a href="https://labkitpro.com/guides/method-validation-vs-verification/" style="color:#2563eb;">Method validation vs verification: what 7.2 actually expects</a></li>
-</ul>
 <p style="margin-top:28px;border-top:1px solid #e6e9ef;padding-top:14px;color:#5b6675;font-size:12px;">LabKitPro guides are written from published standards and accreditation-body documents — references, clause numbers and paraphrased intent only, never verbatim standard text. They are for preparation and study, not a certification or accreditation decision, and not legal advice. ISO standards are trademarks of ISO; IATF 16949 is published by the International Automotive Task Force and is not an ISO standard. The current laboratory standard is ISO/IEC 17025:2017; there is no 2025 edition. Global ACI replaced IAF and ILAC on 1 January 2026.</p>
 <p style="color:#5b6675;font-size:12px;"><a href="https://labkitpro.com/academy/" style="color:#2563eb;">Academy by standard</a> · <a href="https://labkitpro.com/guides/" style="color:#2563eb;">All practical guides</a> · <a href="https://labkitpro.com/tools/" style="color:#2563eb;">Free browser tools</a></p>
 </div>5:X
 a:X
 a:C
-0:{"buildId":"aLYKshdVQHmrl67tef5Vu","data":[{"rsc":["$","$1","c",{"children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,"$L3"]}],"isPartial":"$@4","staleTime":"$5","varyParams":null},{"rsc":"$L6","isPartial":"$@7","staleTime":"$5","varyParams":null},{"rsc":"$L8","isPartial":"$@9","staleTime":"$5","varyParams":"$a"},{"rsc":"$Lb","isPartial":"$@c","staleTime":"$5","varyParams":"$a"}],"isUpgradeableISRFallback":false,"a":"$@d","rootVaryParams":null,"needsRuntimeRequest":"$@e"}
+0:{"buildId":"L5IT1dKBNRyqUdUY61EvD","data":[{"rsc":["$","$1","c",{"children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,"$L3"]}],"isPartial":"$@4","staleTime":"$5","varyParams":null},{"rsc":"$L6","isPartial":"$@7","staleTime":"$5","varyParams":null},{"rsc":"$L8","isPartial":"$@9","staleTime":"$5","varyParams":"$a"},{"rsc":"$Lb","isPartial":"$@c","staleTime":"$5","varyParams":"$a"}],"isUpgradeableISRFallback":false,"a":"$@d","rootVaryParams":null,"needsRuntimeRequest":"$@e"}
 f:I[97367,["/_next/static/chunks/3fntmmi971322.js","/_next/static/chunks/44akv4s2pjyhg.js","/_next/static/chunks/3lomafkwojbhj.js","/_next/static/chunks/3j9w__s_pmzpu.js","/_next/static/chunks/0at8juk_chkd2.js","/_next/static/chunks/1z8e6pqr_dqbc.js"],"OutletBoundary"]
 10:"$Sreact.suspense"
 12:I[97367,["/_next/static/chunks/3fntmmi971322.js","/_next/static/chunks/44akv4s2pjyhg.js","/_next/static/chunks/3lomafkwojbhj.js","/_next/static/chunks/3j9w__s_pmzpu.js","/_next/static/chunks/0at8juk_chkd2.js","/_next/static/chunks/1z8e6pqr_dqbc.js"],"ViewportBoundary"]

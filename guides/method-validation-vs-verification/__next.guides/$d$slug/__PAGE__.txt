@@ -1,5 +1,5 @@
 1:"$Sreact.fragment"
-2:T421b,<script type="application/ld+json">{
+2:T3f7f,<script type="application/ld+json">{
  "@context": "https://schema.org",
  "@graph": [
   {
@@ -116,17 +116,12 @@
 <p style="margin:0 0 10px;"><b>How many replicates are needed for a validation study?</b><br>There is no universal number. The plan should be justified by the intended use, the variability and the acceptance criteria — commonly multiple days, operators and concentration levels so that intermediate precision can be estimated. Sector guidance or the method itself may prescribe a design.</p>
 <p style="margin:0 0 10px;"><b>When must a method be re-validated?</b><br>When it is modified, extended to a new matrix or range, moved to substantially different equipment, or when QC / PT data indicate performance has changed. Document the trigger in your change-control procedure rather than relying on a fixed calendar.</p>
 <div style="background:#0f2a4a;color:#fff;border-radius:12px;padding:20px 22px;margin:30px 0 18px;"><p style="margin:0 0 6px;font-size:11px;font-weight:700;letter-spacing:.6px;color:#9dc0ef;text-transform:uppercase;">Turn the study into records</p><p style="margin:0 0 8px;font-size:18px;font-weight:700;line-height:1.4;">Document accuracy, precision, linearity and LOD/LOQ in one place</p><p style="margin:0 0 14px;font-size:14px;color:#d7e3f4;">Enter the study data for each validation parameter and produce a structured method-validation report with the calculations shown — ready to attach to the method file an assessor will ask for.</p><a href="https://labkitpro.com/tools/method-validation/" style="display:inline-block;background:#fff;color:#0f2a4a;padding:11px 18px;border-radius:8px;text-decoration:none;font-weight:700;">Open the free method-validation tool →</a><p style="margin:12px 0 0;font-size:12px;color:#a9c1e0;">Runs in your browser. Export the report free. No sign-up needed.</p></div>
-<h2 style="font-size:17px;margin:26px 0 8px;">Keep reading</h2><ul style="padding-left:22px;font-size:14px;">
-<li style="margin-bottom:6px;"><a href="https://labkitpro.com/guides/iso-17025-onsite-assessment/" style="color:#2563eb;">How to pass an ISO/IEC 17025 on-site assessment</a></li>
-<li style="margin-bottom:6px;"><a href="https://labkitpro.com/guides/measurement-uncertainty-budget-steps/" style="color:#2563eb;">Building an uncertainty budget in eight steps</a></li>
-<li style="margin-bottom:6px;"><a href="https://labkitpro.com/guides/gage-rr-acceptance-criteria/" style="color:#2563eb;">Gage R&amp;R: what the 10% / 30% thresholds really mean</a></li>
-</ul>
 <p style="margin-top:28px;border-top:1px solid #e6e9ef;padding-top:14px;color:#5b6675;font-size:12px;">LabKitPro guides are written from published standards and accreditation-body documents — references, clause numbers and paraphrased intent only, never verbatim standard text. They are for preparation and study, not a certification or accreditation decision, and not legal advice. ISO standards are trademarks of ISO; IATF 16949 is published by the International Automotive Task Force and is not an ISO standard. The current laboratory standard is ISO/IEC 17025:2017; there is no 2025 edition. Global ACI replaced IAF and ILAC on 1 January 2026.</p>
 <p style="color:#5b6675;font-size:12px;"><a href="https://labkitpro.com/academy/" style="color:#2563eb;">Academy by standard</a> · <a href="https://labkitpro.com/guides/" style="color:#2563eb;">All practical guides</a> · <a href="https://labkitpro.com/tools/" style="color:#2563eb;">Free browser tools</a></p>
 </div>5:X
 a:X
 a:C
-0:{"buildId":"aLYKshdVQHmrl67tef5Vu","data":[{"rsc":["$","$1","c",{"children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,"$L3"]}],"isPartial":"$@4","staleTime":"$5","varyParams":null},{"rsc":"$L6","isPartial":"$@7","staleTime":"$5","varyParams":null},{"rsc":"$L8","isPartial":"$@9","staleTime":"$5","varyParams":"$a"},{"rsc":"$Lb","isPartial":"$@c","staleTime":"$5","varyParams":"$a"}],"isUpgradeableISRFallback":false,"a":"$@d","rootVaryParams":null,"needsRuntimeRequest":"$@e"}
+0:{"buildId":"L5IT1dKBNRyqUdUY61EvD","data":[{"rsc":["$","$1","c",{"children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,"$L3"]}],"isPartial":"$@4","staleTime":"$5","varyParams":null},{"rsc":"$L6","isPartial":"$@7","staleTime":"$5","varyParams":null},{"rsc":"$L8","isPartial":"$@9","staleTime":"$5","varyParams":"$a"},{"rsc":"$Lb","isPartial":"$@c","staleTime":"$5","varyParams":"$a"}],"isUpgradeableISRFallback":false,"a":"$@d","rootVaryParams":null,"needsRuntimeRequest":"$@e"}
 f:I[97367,["/_next/static/chunks/3fntmmi971322.js","/_next/static/chunks/44akv4s2pjyhg.js","/_next/static/chunks/3lomafkwojbhj.js","/_next/static/chunks/3j9w__s_pmzpu.js","/_next/static/chunks/0at8juk_chkd2.js","/_next/static/chunks/1z8e6pqr_dqbc.js"],"OutletBoundary"]
 10:"$Sreact.suspense"
 12:I[97367,["/_next/static/chunks/3fntmmi971322.js","/_next/static/chunks/44akv4s2pjyhg.js","/_next/static/chunks/3lomafkwojbhj.js","/_next/static/chunks/3j9w__s_pmzpu.js","/_next/static/chunks/0at8juk_chkd2.js","/_next/static/chunks/1z8e6pqr_dqbc.js"],"ViewportBoundary"]

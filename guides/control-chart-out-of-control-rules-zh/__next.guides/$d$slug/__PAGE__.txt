@@ -1,5 +1,5 @@
 1:"$Sreact.fragment"
-2:T4276,<script type="application/ld+json">{
+2:T4005,<script type="application/ld+json">{
  "@context": "https://schema.org",
  "@graph": [
   {
@@ -121,18 +121,13 @@
 <p style="margin:0 0 10px;"><b>控制限可信需要多少个点？</b><br>常见做法是第一阶段基线取约 20–25 个子组（约 100 个单值），并在冻结控制限之前把已知特殊原因调查、剔除。少于这个量，估计会又宽又不稳。</p>
 <p style="margin:0 0 10px;"><b>单值 I-MR 图能用链规则吗？</b><br>可以，多数软件把第 1–4、6 条用于单值图；但涉及子组均值的规则表现不同，连续过程数据的自相关也会产生假信号。用之前先查软件里的规则定义。</p>
 <div style="background:#0f2a4a;color:#fff;border-radius:12px;padding:20px 22px;margin:30px 0 18px;"><p style="margin:0 0 6px;font-size:11px;font-weight:700;letter-spacing:.6px;color:#9dc0ef;text-transform:uppercase;">画出来，别靠猜</p><p style="margin:0 0 8px;font-size:18px;font-weight:700;line-height:1.4;">生成 X̄-R、I-MR、p 图并实时标出判异信号</p><p style="margin:0 0 14px;font-size:14px;color:#d7e3f4;">粘贴样本数据，选择图型和规则集，输入数值的同时就能看到信号被标出——包括是哪一条规则触发，方便对着它写反应计划。</p><a href="https://labkitpro.com/tools/spc/" style="display:inline-block;background:#fff;color:#0f2a4a;padding:11px 18px;border-radius:8px;text-decoration:none;font-weight:700;">打开免费的 SPC 控制图工具 →</a><p style="margin:12px 0 0;font-size:12px;color:#a9c1e0;">浏览器内运行，报告导出免费，无需注册。</p></div>
-<h2 style="font-size:17px;margin:26px 0 8px;">延伸阅读</h2><ul style="padding-left:22px;font-size:14px;">
-<li style="margin-bottom:6px;"><a href="https://labkitpro.com/guides/cpk-vs-ppk-zh/" style="color:#2563eb;">Cpk 和 Ppk：差距在告诉你什么漂移</a></li>
-<li style="margin-bottom:6px;"><a href="https://labkitpro.com/guides/gage-rr-acceptance-criteria-zh/" style="color:#2563eb;">GR&amp;R：10% / 30% 阈值到底在说什么</a></li>
-<li style="margin-bottom:6px;"><a href="https://labkitpro.com/guides/8d-report-writing-guide-zh/" style="color:#2563eb;">8D 报告怎么写客户才会接受</a></li>
-</ul>
 <p style="margin-top:28px;border-top:1px solid #e6e9ef;padding-top:14px;color:#5b6675;font-size:12px;">本指南依据公开发布的标准与认可机构文件编写，仅引用编号、标题与意译要点，不复制标准原文，供内部准备与学习参考，不构成认证或认可决定，也不构成法律意见。ISO 标准为 ISO 的商标；IATF 16949 由国际汽车工作组发布，并非 ISO 标准。现行实验室标准为 ISO/IEC 17025:2017，不存在 2025 版。Global ACI 已于 2026 年 1 月 1 日取代 IAF 与 ILAC。</p>
 <p style="color:#5b6675;font-size:12px;"><a href="https://labkitpro.com/academy/" style="color:#2563eb;">按标准进入学院</a> · <a href="https://labkitpro.com/guides/" style="color:#2563eb;">全部实战指南</a> · <a href="https://labkitpro.com/tools/" style="color:#2563eb;">免费浏览器工具</a></p>
 </div>
 </div>5:X
 a:X
 a:C
-0:{"buildId":"aLYKshdVQHmrl67tef5Vu","data":[{"rsc":["$","$1","c",{"children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,"$L3"]}],"isPartial":"$@4","staleTime":"$5","varyParams":null},{"rsc":"$L6","isPartial":"$@7","staleTime":"$5","varyParams":null},{"rsc":"$L8","isPartial":"$@9","staleTime":"$5","varyParams":"$a"},{"rsc":"$Lb","isPartial":"$@c","staleTime":"$5","varyParams":"$a"}],"isUpgradeableISRFallback":false,"a":"$@d","rootVaryParams":null,"needsRuntimeRequest":"$@e"}
+0:{"buildId":"L5IT1dKBNRyqUdUY61EvD","data":[{"rsc":["$","$1","c",{"children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,"$L3"]}],"isPartial":"$@4","staleTime":"$5","varyParams":null},{"rsc":"$L6","isPartial":"$@7","staleTime":"$5","varyParams":null},{"rsc":"$L8","isPartial":"$@9","staleTime":"$5","varyParams":"$a"},{"rsc":"$Lb","isPartial":"$@c","staleTime":"$5","varyParams":"$a"}],"isUpgradeableISRFallback":false,"a":"$@d","rootVaryParams":null,"needsRuntimeRequest":"$@e"}
 f:I[97367,["/_next/static/chunks/3fntmmi971322.js","/_next/static/chunks/44akv4s2pjyhg.js","/_next/static/chunks/3lomafkwojbhj.js","/_next/static/chunks/3j9w__s_pmzpu.js","/_next/static/chunks/0at8juk_chkd2.js","/_next/static/chunks/1z8e6pqr_dqbc.js"],"OutletBoundary"]
 10:"$Sreact.suspense"
 12:I[97367,["/_next/static/chunks/3fntmmi971322.js","/_next/static/chunks/44akv4s2pjyhg.js","/_next/static/chunks/3lomafkwojbhj.js","/_next/static/chunks/3j9w__s_pmzpu.js","/_next/static/chunks/0at8juk_chkd2.js","/_next/static/chunks/1z8e6pqr_dqbc.js"],"ViewportBoundary"]
