@@ -1,5 +1,5 @@
 1:"$Sreact.fragment"
-2:T5154,<script type="application/ld+json">{
+2:T519d,<script type="application/ld+json">{
  "@context": "https://schema.org",
  "@graph": [
   {
@@ -117,7 +117,7 @@
 <h2 id="s8" style="font-size:20px;margin-top:30px;margin-bottom:8px;">Step 8 — Run one full internal audit and management review under the new edition</h2>
 <p style="margin:0 0 12px;">Do a complete internal-audit cycle against the 2026 edition — with an objective defined for each audit — and a management review using the new input list, before the CB arrives. This is where most gap-list items either close or turn back into work. It also generates the evidence an auditor will ask for first.</p>
 <h2 id="s9" style="font-size:20px;margin-top:30px;margin-bottom:8px;">Step 9 — Book the transition audit, then update everything that mentions the certificate</h2>
-<p style="margin:0 0 12px;">A transition audit can often be combined with a surveillance or recertification audit — ask your CB, it is the cheapest route. Afterwards confirm the new certificate actually says 2026, then update customer portals, supplier questionnaires, tender documents, website claims and marketing material. Certificate claims must match the scope and edition on the certificate; transitional IAF/ILAC marks remain recognised while Global ACI's MRA mark is phased in.</p>
+<p style="margin:0 0 12px;">A transition audit can often be combined with a surveillance or recertification audit — ask your CB, it is the cheapest route. Afterwards confirm the new certificate actually says 2026, then update customer portals, supplier questionnaires, tender documents, website claims and marketing material. Certificate claims must match the scope and edition on the certificate; for accreditation-mark use, follow the current written rules of your own accreditation and certification bodies rather than assuming a transitional arrangement.</p>
 <p style="margin:0 0 12px;">If you run an integrated management system, do the same exercise for ISO 14001:2026 (cutoff 30 April 2029 — earlier than 9001) and keep ISO 45001:2027 as expected-only: it is still at DIS stage and its transition arrangements have not been published. Our <a href="https://labkitpro.com/iso-9001-2026/" style="color:#2563eb;">ISO 9001:2026 hub</a> and <a href="https://labkitpro.com/transition/" style="color:#2563eb;">transition centre</a> hold the timelines and the clause-by-clause diff.</p>
 <h2 id="where-it-goes-wrong" style="font-size:20px;margin-top:30px;margin-bottom:8px;">Where this goes wrong in practice</h2>
 <p style="margin:0 0 11px;">Starting by rewriting the quality manual. Neither the 2015 nor the 2026 edition mandates one; the work is in records, behaviours and decisions.</p>
@@ -141,7 +141,7 @@
 </div>5:X
 a:X
 a:C
-0:{"buildId":"r86J5RQiYoW03Hl3sxvl8","data":[{"rsc":["$","$1","c",{"children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,"$L3"]}],"isPartial":"$@4","staleTime":"$5","varyParams":null},{"rsc":"$L6","isPartial":"$@7","staleTime":"$5","varyParams":null},{"rsc":"$L8","isPartial":"$@9","staleTime":"$5","varyParams":"$a"},{"rsc":"$Lb","isPartial":"$@c","staleTime":"$5","varyParams":"$a"}],"isUpgradeableISRFallback":false,"a":"$@d","rootVaryParams":null,"needsRuntimeRequest":"$@e"}
+0:{"buildId":"JQ4n-IX8hI4FqRQA2aKdy","data":[{"rsc":["$","$1","c",{"children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,"$L3"]}],"isPartial":"$@4","staleTime":"$5","varyParams":null},{"rsc":"$L6","isPartial":"$@7","staleTime":"$5","varyParams":null},{"rsc":"$L8","isPartial":"$@9","staleTime":"$5","varyParams":"$a"},{"rsc":"$Lb","isPartial":"$@c","staleTime":"$5","varyParams":"$a"}],"isUpgradeableISRFallback":false,"a":"$@d","rootVaryParams":null,"needsRuntimeRequest":"$@e"}
 f:I[97367,["/_next/static/chunks/3fntmmi971322.js","/_next/static/chunks/44akv4s2pjyhg.js","/_next/static/chunks/3lomafkwojbhj.js","/_next/static/chunks/3j9w__s_pmzpu.js","/_next/static/chunks/0at8juk_chkd2.js","/_next/static/chunks/1z8e6pqr_dqbc.js"],"OutletBoundary"]
 10:"$Sreact.suspense"
 12:I[97367,["/_next/static/chunks/3fntmmi971322.js","/_next/static/chunks/44akv4s2pjyhg.js","/_next/static/chunks/3lomafkwojbhj.js","/_next/static/chunks/3j9w__s_pmzpu.js","/_next/static/chunks/0at8juk_chkd2.js","/_next/static/chunks/1z8e6pqr_dqbc.js"],"ViewportBoundary"]

@@ -1,5 +1,5 @@
 1:"$Sreact.fragment"
-2:T43c1,<script type="application/ld+json">{
+2:T43c5,<script type="application/ld+json">{
  "@context": "https://schema.org",
  "@graph": [
   {
@@ -120,14 +120,14 @@
 <h2 style="font-size:17px;margin:26px 0 8px;">Keep reading</h2><ul style="padding-left:22px;font-size:14px;">
 <li style="margin-bottom:6px;"><a href="https://labkitpro.com/guides/iso-17025-onsite-assessment/" style="color:#2563eb;">How to pass an ISO/IEC 17025 on-site assessment</a></li>
 <li style="margin-bottom:6px;"><a href="https://labkitpro.com/guides/method-validation-vs-verification/" style="color:#2563eb;">Method validation vs verification: what 7.2 actually expects</a></li>
-<li style="margin-bottom:6px;"><a href="https://labkitpro.com/guides/gage-rr-acceptance-criteria/" style="color:#2563eb;">Gage R&R: what the 10% / 30% thresholds really mean</a></li>
+<li style="margin-bottom:6px;"><a href="https://labkitpro.com/guides/gage-rr-acceptance-criteria/" style="color:#2563eb;">Gage R&amp;R: what the 10% / 30% thresholds really mean</a></li>
 </ul>
 <p style="margin-top:28px;border-top:1px solid #e6e9ef;padding-top:14px;color:#5b6675;font-size:12px;">LabKitPro guides are written from published standards and accreditation-body documents — references, clause numbers and paraphrased intent only, never verbatim standard text. They are for preparation and study, not a certification or accreditation decision, and not legal advice. ISO standards are trademarks of ISO; IATF 16949 is published by the International Automotive Task Force and is not an ISO standard. The current laboratory standard is ISO/IEC 17025:2017; there is no 2025 edition. Global ACI replaced IAF and ILAC on 1 January 2026.</p>
 <p style="color:#5b6675;font-size:12px;"><a href="https://labkitpro.com/academy/" style="color:#2563eb;">Academy by standard</a> · <a href="https://labkitpro.com/guides/" style="color:#2563eb;">All practical guides</a> · <a href="https://labkitpro.com/tools/" style="color:#2563eb;">Free browser tools</a></p>
 </div>5:X
 a:X
 a:C
-0:{"buildId":"r86J5RQiYoW03Hl3sxvl8","data":[{"rsc":["$","$1","c",{"children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,"$L3"]}],"isPartial":"$@4","staleTime":"$5","varyParams":null},{"rsc":"$L6","isPartial":"$@7","staleTime":"$5","varyParams":null},{"rsc":"$L8","isPartial":"$@9","staleTime":"$5","varyParams":"$a"},{"rsc":"$Lb","isPartial":"$@c","staleTime":"$5","varyParams":"$a"}],"isUpgradeableISRFallback":false,"a":"$@d","rootVaryParams":null,"needsRuntimeRequest":"$@e"}
+0:{"buildId":"JQ4n-IX8hI4FqRQA2aKdy","data":[{"rsc":["$","$1","c",{"children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,"$L3"]}],"isPartial":"$@4","staleTime":"$5","varyParams":null},{"rsc":"$L6","isPartial":"$@7","staleTime":"$5","varyParams":null},{"rsc":"$L8","isPartial":"$@9","staleTime":"$5","varyParams":"$a"},{"rsc":"$Lb","isPartial":"$@c","staleTime":"$5","varyParams":"$a"}],"isUpgradeableISRFallback":false,"a":"$@d","rootVaryParams":null,"needsRuntimeRequest":"$@e"}
 f:I[97367,["/_next/static/chunks/3fntmmi971322.js","/_next/static/chunks/44akv4s2pjyhg.js","/_next/static/chunks/3lomafkwojbhj.js","/_next/static/chunks/3j9w__s_pmzpu.js","/_next/static/chunks/0at8juk_chkd2.js","/_next/static/chunks/1z8e6pqr_dqbc.js"],"OutletBoundary"]
 10:"$Sreact.suspense"
 12:I[97367,["/_next/static/chunks/3fntmmi971322.js","/_next/static/chunks/44akv4s2pjyhg.js","/_next/static/chunks/3lomafkwojbhj.js","/_next/static/chunks/3j9w__s_pmzpu.js","/_next/static/chunks/0at8juk_chkd2.js","/_next/static/chunks/1z8e6pqr_dqbc.js"],"ViewportBoundary"]
